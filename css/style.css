@@ -7,12 +7,12 @@
 
 /*-------Seccion del body---------*/
 body{
-        background-color: #1a1a1a;
-        font-family: "Reddit Mono", monospace;
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
-        font-size: x-large;
+        background-color: #1a1a1a !important;
+        font-family: "Reddit Mono", monospace !important;
+        font-optical-sizing: auto !important;
+        font-weight: <weight> !important;
+        font-style: normal !important;
+        font-size: x-large !important;
     }
 body{
     display: grid;
@@ -30,9 +30,9 @@ h2{
 
 /*-------Seccion enlaces general-------*/
 a{
-        text-decoration: none;
-        color: white;
-        font-weight: 700;
+        text-decoration: none !important;
+        color: white !important;
+        font-weight: 700 !important;
 }
 .enlace_blanco{
         color: rgb(228, 187, 187);
@@ -46,8 +46,24 @@ header{
     justify-content: space-between;
     background-color: #453C3C;
     padding: 1rem;
-    height: 7rem;
+    height: 7.5rem;
     margin-top: 2rem;
+}
+.container_nav{
+    display: flex;
+    position: relative;
+    right: 23rem;
+}
+@media (max-width: 600px){
+    container_nav{
+        flex-direction: column;
+    }
+    nav{
+        padding: 1rem 0rem;
+    }
+    .Logo{
+        margin: auto;
+    }
 }
 h1{
     display: flex;
@@ -64,28 +80,17 @@ h1{
     height: 11rem;
     display: flex;
     margin-right: 1.5rem;
-    border-radius: 100%;
-    border-style: solid;
     color: black;
-    border-width: 0.4rem;
 }
 
 nav a{
-    padding-right: 5rem;
-    font-size: 3rem;
+    padding-right: 5rem !important;
+    font-size: 3rem !important;
 }
 nav a:hover{
-    color: black;
+    color: black !important;
 }
-/*Cuando la pantalla sea menor a 700px (celulares) nuestro header aplica los siguientes cambios*/
-@media (max-width:6rem) {
-    header{
-        flex-direction: column;
-    }
-    nav{
-        padding: 1rem 0rem;
-    }
-}
+
 .input{
     justify-content: space-between;
     padding: 1rem;
@@ -125,7 +130,7 @@ footer li{
 .contenedor {
     display: table;
     position: relative;
-    right: 53rem;
+    right: 40rem;
 }
 .contenidos {
     display: table-row;
@@ -149,57 +154,48 @@ footer li{
     justify-content: center;
 }
 footer a{
-    color: black;
-    padding: 1rem;
-    font-size: 1.8rem;
-    font-weight: 400;
+    color: black !important;
+    padding: 1rem !important;
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
 }
 footer a:hover{
-    color: whitesmoke;
-}
-
-.grid_container{
-    display: grid;
-    height: 26rem;
-    width: 40rem;
-    grid-template-rows: 14rem 12rem;
-    position: relative;
-    right: 57rem;
+    color: whitesmoke !important;
 }
 .logo_ig{
     height: 4rem;
     position: relative;
-    top: 2rem;
+    left: 1;
 }
 .logo_face{
     height: 5rem;
     position: relative;
-    right: 5rem;
-    top: 2.5rem;
+    bottom: 0.5rem;
 }
 .logo_tk{
     height: 4rem;
     position: relative;
-    right: 10rem;
-    top: 2rem;
 }
-.flores{
-height: 20rem;
-position: relative;
-left: 104rem;
-bottom: 1.5rem;
+.logos{
+    display: flex;
+    position: relative;
+    right: 54rem;
+    top: 10rem;
 }
 .rositas_foot{
-    height: 18.5rem;
-    width: 32rem;
+    height: 18rem !important;
+    width: 22rem !important;
     position: relative;
-    bottom: 2.5rem;
-    right: 5.8rem;
+}
+.floresD{
+    position: relative;
+    right: 33rem;
+    bottom: 3rem;
 }
 .circulo{
     height: 25rem;
     position: relative;
-    left: 102rem;
+    left: 55rem;
 }
 /*con esta clase pongo los enlaces de el footer en blanco para que el usuario sepa en cual se encuentra (simplemente estetica)*/
 .blanco{
@@ -210,8 +206,8 @@ bottom: 1.5rem;
     font-size: 1rem;
     font-weight: 600;
     position: relative;
-    left: 89rem;
-    top: 11.5rem;
+    left: 90rem;
+    top: 12rem;
     white-space: nowrap;
 }
 
