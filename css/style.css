@@ -22,10 +22,10 @@ body{
 
 /*-------Seccion (h1-h6)--------*/
 h2{
-        color: rgb(245, 89, 115);
-        text-align: center;
-        font-size: 3rem;
-        padding: 1rem;
+        color: rgb(245, 89, 115) !important;
+        text-align: center !important;
+        font-size: 3rem !important;
+        padding: 1rem !important;
     }
 
 /*-------Seccion enlaces general-------*/
@@ -55,7 +55,7 @@ header{
     right: 23rem;
 }
 @media (max-width: 600px){
-    container_nav{
+    .container_nav{
         flex-direction: column;
     }
     nav{
@@ -117,9 +117,9 @@ footer{
     margin-bottom: 1rem;
 }
 footer h2{
-    font-size: 2rem;
-    font-weight: 900;
-    color: black;
+    font-size: 2rem !important;
+    font-weight: 900 !important;
+    color: black !important;
 }
 footer h3{
     font-size: 4rem;
@@ -212,9 +212,9 @@ footer a:hover{
 }
 
 /*------Seccion del Main-------*/
-section h2{
-    font-weight: 1000;
-    font-size: 5rem;
+.section_h2{
+    font-weight: 1000 !important;
+    font-size: 5rem !important;
 }
 section p{
     color: whitesmoke;
