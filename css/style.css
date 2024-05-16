@@ -7,12 +7,12 @@
 
 /*-------Seccion del body---------*/
 body{
-        background-color: #1a1a1a !important;
-        font-family: "Reddit Mono", monospace !important;
-        font-optical-sizing: auto !important;
-        font-weight: <weight> !important;
-        font-style: normal !important;
-        font-size: x-large !important;
+    background-color: #1a1a1a !important;
+    font-family: "Reddit Mono", monospace !important;
+    font-optical-sizing: auto !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: x-large !important;
 }
 body{
     display: grid;
