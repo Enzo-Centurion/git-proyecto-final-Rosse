@@ -1,0 +1,28 @@
+
+/* _base.scss */
+@import '../utils/variables';
+
+* {
+    color: black;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $primary-color !important;
+    font-family: $font-family !important;
+    font-optical-sizing: auto !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+    font-size: x-large !important;
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+}
+
+a {
+    text-decoration: none !important;
+    color: $text-color !important;
+    font-weight: 700 !important;
+}

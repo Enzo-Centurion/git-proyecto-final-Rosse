@@ -1,0 +1,81 @@
+@import '../utils/variables';
+
+footer {
+    background-color: #fb6666;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+
+    h2 {
+        font-size: 2rem !important;
+        font-weight: 900 !important;
+        color: black !important;
+    }
+
+    a {
+        color: black !important;
+        padding: 1rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-decoration: none !important;
+
+        &:hover {
+            color: #eee3e3 !important;
+        }
+    }
+    .circulo{
+        height: 15rem;
+    }
+    .logo_ig,.logo_tk {
+        height: 6rem;
+    }
+    .logo_face {
+        height: 7.7rem;
+        position: relative;
+        bottom: 0.9rem;
+    }
+    .flores{
+        height: 15rem;
+    }
+    .spanf{
+        position: relative;
+        top: 2rem;
+    }
+    .container {
+        text-align: center;
+
+        .row {
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        .col {
+            padding: 1rem;
+            h2 {
+                font-size: 2rem;
+                font-weight: 900;
+                color: black;
+            }
+
+            a {
+                color: black;
+                padding: 1rem;
+                font-size: 1.8rem;
+                font-weight: 400;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+
+

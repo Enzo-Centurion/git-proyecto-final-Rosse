@@ -1,0 +1,17 @@
+// utils/_mixins.scss
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @mixin card-shadow($color) {
+    box-shadow: 0 4px 6px 2px $color;
+  }
+  
+  @mixin card-hover-shadow($color) {
+    &:hover {
+      box-shadow: 0 8px 12px 2px $color;
+    }
+  }
+  

@@ -1,0 +1,78 @@
+
+/* _header.scss */
+@import '../utils/variables';
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: $secondary-color;
+    padding: 1rem;
+    height: 7.5rem;
+    margin-top: 2rem;
+
+    .container_nav {
+        display: flex;
+        position: relative;
+        right: 23rem;
+    }
+
+    @media (max-width: 600px) {
+        .container_nav {
+            flex-direction: column;
+        }
+        nav {
+            padding: 1rem 0rem;
+        }
+        .Logo {
+            margin: auto;
+        }
+    }
+
+    h1 {
+        display: flex;
+        align-items: center;
+        color: black;
+        font-size: 5rem;
+    }
+
+    .nombre {
+        display: flex;
+        align-items: center;
+        color: black;
+    }
+
+    .Logo {
+        height: 11rem;
+        display: flex;
+        margin-right: 1.5rem;
+        color: black;
+    }
+
+    nav a {
+        padding-right: 5rem !important;
+        font-size: 3rem !important;
+
+        &:hover {
+            color: $highlight-color !important;
+        }
+    }
+
+    .input {
+        justify-content: space-between;
+        padding: 1rem;
+        align-items: center;
+        border-radius: 2.5rem;
+        border-width: medium;
+        border-style: solid;
+        border-color: black;
+        position: relative;
+    }
+
+    ::placeholder {
+        color: black;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+}
+
