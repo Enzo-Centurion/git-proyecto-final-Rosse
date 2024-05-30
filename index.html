@@ -15,22 +15,27 @@
 <body>
     <!--Encabezado con logo de la tienda y los difeentes campos-->
     <header class="bg-dark py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="/index.html" class="text-decoration-none text-light d-flex align-items-center">
-                <img src="images/logo.png" alt="Logo de la tienda" class="Logo me-2">
-            </a>
-            <nav>
-                <ul class="list-unstyled d-flex m-0">
-                    <li><a href="html/remeras.html" class="text-light text-decoration-none">Remeras</a></li>
-                    <li><a href="html/pantalones.html" class="text-light text-decoration-none">Pantalones</a></li>
-                    <li><a href="html/hoodies.html" class="text-light text-decoration-none">Hoodies</a></li>
-                    <li><a href="html/calzados.html" class="text-light text-decoration-none">Calzados</a></li>
-                    <li><input type="text" placeholder="Buscar" class="input text-light text-decoration-none"></li>
-                </ul>
-            </nav>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="Logo" style="height: 40px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="html/remeras.html">REMERAS</a>
+              <a class="nav-link" href="html/pantalones.html">PANTALONES</a>
+              <a class="nav-link" href="html/hoodies.html">HOODIES</a>
+              <a class="nav-link" href="html/calzados.html">CALZADOS</a>
+            </div>
+            <div class="search-input">
+              <input type="text" class="form-control" placeholder="Buscar">
+            </div>
+          </div>
         </div>
-    </header>  
-    
+      </nav>
+    </header>
+  
     <!--Seccion de la pagina de inicio con imagenes de las prendas y sus respectivos enlaces-->
     <main class="py-5">
       <section>
@@ -180,10 +185,10 @@
                   </a>
                 </div>
                 <div class="col-md-6 mb-2"> 
-                    <img src="images/circulito.png" alt="Pagina de Tiktok" class="circulo">
+                    <img src="images/circulito.png" alt="circulo de flores" class="circulo">
                 </div>
                 <div class="col-md-2 mb-2"> 
-                  <img src="images/flores.png" alt="Pagina de Tiktok" class="circulo">
+                  <img src="images/flores.png" alt="Rosses" class="circulo">
               </div>
                 <div class="row">
                   <div class="col-md-4 mb-3"> 
@@ -233,6 +238,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         // Inicializar AOS

@@ -154,71 +154,84 @@ footer .container .col a:hover {
   color: #fff;
 }
 
-/* _header.scss */
 /* _variables.scss */
 header {
-  align-items: center;
+  background-color: #333333;
+  padding: 1rem 0;
+}
+header .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #333333;
-  padding: 1rem;
-  height: 7.5rem;
-  margin-top: 2rem;
+  align-items: center;
+  width: 100%;
 }
-header .container_nav {
+header .navbar .navbar-brand img {
+  height: 40px;
+}
+header .navbar .navbar-toggler {
+  border: none;
+  background: transparent;
+}
+header .navbar .navbar-toggler:focus {
+  outline: none;
+}
+header .navbar .navbar-collapse {
+  justify-content: center;
+}
+header .navbar .navbar-collapse .navbar-nav {
   display: flex;
-  position: relative;
-  right: 23rem;
+  justify-content: center;
+  margin: auto;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-link {
+  padding-right: 4rem;
+  padding-left: 6rem;
+  font-size: 3rem;
+  color: rgb(0, 0, 0) !important;
+  font-weight: 800 !important;
+  text-shadow: 0 0 5px #fb7171, 0 0 10px rgba(255, 112, 112, 0.979), 0 0 20px rgba(250, 107, 107, 0.979), 0 0 30px rgba(250, 107, 107, 0.979), 0 0 40px rgba(250, 107, 107, 0.979);
+}
+header .navbar .navbar-collapse .navbar-nav .nav-link:hover {
+  color: rgb(246, 246, 246) !important;
+}
+header .navbar .search-input {
+  display: flex;
+  align-items: center;
+  padding-right: 10rem;
+}
+header .navbar .search-input input {
+  width: 150px;
+  height: 3.5rem;
+  padding: 0.5rem;
+  background-color: white !important;
+  border-radius: 5rem;
+  border: 3px solid rgb(2, 2, 2);
+}
+header .navbar .search-input input::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 1.4rem;
 }
 @media (max-width: 600px) {
-  header .container_nav {
+  header .navbar {
     flex-direction: column;
+    padding: 1rem 0;
   }
-  header nav {
-    padding: 1rem 0rem;
-  }
-  header .Logo {
+  header .navbar .navbar-brand {
     margin: auto;
   }
-}
-header h1 {
-  display: flex;
-  align-items: center;
-  color: black;
-  font-size: 5rem;
-}
-header .nombre {
-  display: flex;
-  align-items: center;
-  color: black;
-}
-header .Logo {
-  height: 11rem;
-  display: flex;
-  margin-right: 1.5rem;
-  color: black;
-}
-header nav a {
-  padding-right: 5rem !important;
-  font-size: 3rem !important;
-}
-header nav a:hover {
-  color: rgb(250, 96, 96) !important;
-}
-header .input {
-  justify-content: space-between;
-  padding: 1rem;
-  align-items: center;
-  border-radius: 2.5rem;
-  border-width: medium;
-  border-style: solid;
-  border-color: black;
-  position: relative;
-}
-header ::placeholder {
-  color: black;
-  font-size: 1.3rem;
-  padding: 0.5rem;
+  header .navbar .navbar-collapse {
+    justify-content: center;
+  }
+  header .navbar .navbar-collapse .navbar-nav {
+    flex-direction: column;
+  }
+  header .navbar .navbar-collapse .navbar-nav .nav-link {
+    padding-right: 0 !important;
+    padding-bottom: 1rem !important;
+    text-decoration: none !important;
+    font-size: 1rem !important;
+    color: white !important;
+  }
 }
 
 /* _main.scss */
