@@ -42,6 +42,10 @@ h2 {
   font-weight: 900 !important;
 }
 
+main p {
+  color: white !important;
+  font-size: 2.5rem;
+}
 main section .container .row .col {
   background-color: #090909;
   padding: 10px;
@@ -99,25 +103,30 @@ footer h2 {
   font-weight: 900 !important;
   color: black !important;
 }
-footer a {
+footer .col a {
   color: black !important;
   padding: 1rem;
   font-size: 1.8rem;
   font-weight: 400;
   text-decoration: none !important;
+  transition: transform 0.3s ease-in-out;
 }
-footer a:hover {
+footer .col a:hover {
   color: #eee3e3 !important;
+  transform: scale(1.5);
 }
 footer .circulo {
   height: 15rem;
 }
 footer .logo_ig, footer .logo_tk {
   height: 6rem;
+  position: relative;
+  top: 5rem;
 }
 footer .logo_face {
   height: 7.7rem;
   position: relative;
+  top: 4.1rem;
   bottom: 0.9rem;
 }
 footer .flores {
@@ -144,15 +153,6 @@ footer .container .col h2 {
   font-weight: 900;
   color: black;
 }
-footer .container .col a {
-  color: black;
-  padding: 1rem;
-  font-size: 1.8rem;
-  font-weight: 400;
-}
-footer .container .col a:hover {
-  color: #fff;
-}
 
 /* _variables.scss */
 header {
@@ -164,9 +164,12 @@ header .navbar {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding: 0.5rem 1rem;
 }
 header .navbar .navbar-brand img {
-  height: 40px;
+  height: 10.5rem !important;
+  margin-top: -40px;
+  margin-bottom: -55px;
 }
 header .navbar .navbar-toggler {
   border: none;
@@ -184,15 +187,34 @@ header .navbar .navbar-collapse .navbar-nav {
   margin: auto;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-link {
+  position: relative;
   padding-right: 4rem;
   padding-left: 6rem;
   font-size: 3rem;
   color: rgb(0, 0, 0) !important;
   font-weight: 800 !important;
   text-shadow: 0 0 5px #fb7171, 0 0 10px rgba(255, 112, 112, 0.979), 0 0 20px rgba(250, 107, 107, 0.979), 0 0 30px rgba(250, 107, 107, 0.979), 0 0 40px rgba(250, 107, 107, 0.979);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+header .navbar .navbar-collapse .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, rgba(255, 112, 112, 0.979) 15%, rgba(0, 0, 0, 0.979) 100%);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
 }
 header .navbar .navbar-collapse .navbar-nav .nav-link:hover {
   color: rgb(246, 246, 246) !important;
+  transform: scale(1.3);
+  text-shadow: 0 0 10px rgba(255, 112, 112, 0.979), 0 0 20px rgba(255, 112, 112, 0.979), 0 0 30px rgba(255, 112, 112, 0.979), 0 0 40px rgb(255, 255, 255);
+}
+header .navbar .navbar-collapse .navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
 }
 header .navbar .search-input {
   display: flex;
@@ -244,7 +266,7 @@ main .section-card {
   flex-direction: column;
   box-shadow: 0px 0px 7px 7px rgb(250, 96, 96) !important;
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }

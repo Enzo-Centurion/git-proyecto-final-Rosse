@@ -15,35 +15,46 @@ footer {
         color: black !important;
     }
 
-    a {
+    .col a {
         color: black !important;
         padding: 1rem;
         font-size: 1.8rem;
         font-weight: 400;
         text-decoration: none !important;
+        transition: transform 0.3s ease-in-out; // Agregamos la transición para el efecto de agrandamiento
 
         &:hover {
             color: #eee3e3 !important;
+            transform: scale(1.5); // Escala el enlace al 150% de su tamaño original al pasar el mouse sobre él
         }
     }
-    .circulo{
+
+    .circulo {
         height: 15rem;
     }
-    .logo_ig,.logo_tk {
+
+    .logo_ig, .logo_tk {
         height: 6rem;
+        position: relative;
+        top: 5rem;
     }
+
     .logo_face {
         height: 7.7rem;
         position: relative;
+        top: 4.1rem;
         bottom: 0.9rem;
     }
-    .flores{
+
+    .flores {
         height: 15rem;
     }
-    .spanf{
+
+    .spanf {
         position: relative;
         top: 2rem;
     }
+
     .container {
         text-align: center;
 
@@ -57,25 +68,21 @@ footer {
 
         .col {
             padding: 1rem;
+
             h2 {
                 font-size: 2rem;
                 font-weight: 900;
                 color: black;
             }
-
-            a {
-                color: black;
-                padding: 1rem;
-                font-size: 1.8rem;
-                font-weight: 400;
-
-                &:hover {
-                    color: #fff;
-                }
-            }
         }
     }
 }
+
+
+
+
+
+
 
 
 
