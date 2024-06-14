@@ -67,15 +67,23 @@ main {
 
             }
         .row{
-            .circuloM2{
-                background-color: transparent !important;
-                border: none !important;
-                box-shadow: none !important;
-                margin-top: -10px;
-                margin-bottom: -40px;
+                .circuloM2 {
+                    text-align: center !important;
+                    overflow: hidden !important; /* Asegura que no se desborde el contenedor */
+                }
+                .circuloM2 img {
+                    max-width: 100% !important; /* Asegura que la imagen no exceda el ancho del contenedor */
+                    height: auto !important;   /* Mantiene la proporción de la imagen */
+                }
+                .circuloM2{
+                    background-color: transparent !important;
+                    border: none !important;
+                    box-shadow: none !important;
+                    margin-top: -10px;
+                    margin-bottom: -40px;
+                }
             }
         }
-        }
-      }
+    }
 }
 
