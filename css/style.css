@@ -36,12 +36,6 @@ h1, h2 {
   font-weight: 900 !important;
 }
 
-h2 {
-  font-size: 5rem !important;
-  padding: 1rem !important;
-  font-weight: 900 !important;
-}
-
 main p {
   color: white !important;
   font-size: 2.5rem;
@@ -54,6 +48,7 @@ main section .container .row .col {
   margin-top: 3rem;
   margin-bottom: 5rem;
   box-shadow: 0px 0px 15px 10px rgb(243, 84, 84);
+  text-shadow: 0 0 5px #fff, 0 0 10px rgba(255, 255, 255, 0.979), 0 0 20px rgba(250, 107, 107, 0.979), 0 0 30px rgba(250, 107, 107, 0.979), 0 0 40px rgba(255, 255, 255, 0.979), 0 0 50px rgba(255, 255, 255, 0.979), 0 0 60px rgba(0, 0, 0, 0.979);
 }
 
 .card {
@@ -121,13 +116,12 @@ footer .circulo {
 footer .logo_ig, footer .logo_tk {
   height: 6rem;
   position: relative;
-  top: 5rem;
+  top: 1rem;
 }
 footer .logo_face {
   height: 7.7rem;
   position: relative;
-  top: 4.1rem;
-  bottom: 0.9rem;
+  top: 0.2rem;
 }
 footer .flores {
   height: 15rem;
@@ -271,7 +265,7 @@ main .section-card {
   margin-right: 0.5rem;
 }
 main .section-card:hover {
-  box-shadow: 0px 0px 15px 15px rgba(250, 107, 107, 0.979) !important;
+  box-shadow: 0px 0px 15px 15px rgba(250, 107, 107, 0.979);
 }
 main .section-card .image-container {
   width: 100%;
@@ -308,6 +302,16 @@ main .section-card .card-body a {
 main .section-card .card-body a:hover {
   background-color: #333333;
   border-color: #1a1a1a;
+}
+main section .container .circuloM {
+  color: none !important;
+}
+main section .container .row .circuloM2 {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  margin-top: -10px;
+  margin-bottom: -40px;
 }
 
 /*# sourceMappingURL=style.css.map */

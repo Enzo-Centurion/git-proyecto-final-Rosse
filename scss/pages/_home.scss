@@ -14,7 +14,7 @@ main {
         margin-right: 0.5rem;
 
         &:hover {
-            box-shadow: 0px 0px 15px 15px rgba(250, 107, 107, 0.979) !important;
+            box-shadow: 0px 0px 15px 15px rgba(250, 107, 107, 0.979);
         }
 
         .image-container {
@@ -57,7 +57,25 @@ main {
                     border-color: darken($secondary-color, 10%);
                 }
             }
+
         }
     }
+    section{
+        .container{
+            .circuloM{
+                color: none !important;
+
+            }
+        .row{
+            .circuloM2{
+                background-color: transparent !important;
+                border: none !important;
+                box-shadow: none !important;
+                margin-top: -10px;
+                margin-bottom: -40px;
+            }
+        }
+        }
+      }
 }
 
