@@ -8,7 +8,10 @@ main {
         display: flex;
         flex-direction: column;
         box-shadow: 0px 0px 7px 7px rgb(250, 96, 96) !important;
-        margin: 2.5rem 0.5rem 1rem;
+        margin-bottom: 1rem;
+        margin-top: 2.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
 
         &:hover {
             box-shadow: 0px 0px 15px 15px rgba(250, 107, 107, 0.979);
@@ -57,28 +60,18 @@ main {
         }
     }
 
-    section {
-        .container {
-            .circuloM {
-                color: none !important;
-            }
-            .row {
-                .circuloM2 {
-                    text-align: center !important;
-                    overflow: hidden !important;
-                }
-                .circuloM2 img {
-                    max-width: 100% !important;
-                    height: auto !important;
-                }
-                .circuloM2 {
-                    background-color: transparent !important;
-                    border: none !important;
-                    box-shadow: none !important;
-                    margin-top: -10px;
-                    margin-bottom: -40px;
-                }
-            }
+    .circuloM2 {
+        text-align: center !important;
+        overflow: hidden !important;
+        background-color: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        margin-top: -10px;
+        margin-bottom: -40px;
+
+        img {
+            max-width: 100% !important;
+            height: auto !important;
         }
     }
 }
@@ -119,5 +112,6 @@ main {
         }
     }
 }
+
 
 
